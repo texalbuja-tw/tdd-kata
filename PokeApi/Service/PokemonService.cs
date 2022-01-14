@@ -13,8 +13,9 @@ namespace PokeApi.Service
             this._httpClient = httpClient;
         }
 
-        public Pokemon GetPokemon(int pokemonNumber)
+        public Pokemon GetPokemon(string pokemonNumber)
         {
+            _httpClient.GetAsync("https://pokeapi.com/api/v2/pokemon");
             return new Pokemon();
         }
     }

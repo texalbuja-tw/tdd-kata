@@ -13,7 +13,7 @@ namespace Tests
         public void ShouldReturnPokemonNameGivenANumber()
         {
             // Arrange
-            var pokemonNumber = 25;
+            string pokemonNumber = "25";
             var expectedPokemon = new Pokemon { name = "Pikachu" };
 
             var handler = new Mock<HttpMessageHandler>();
